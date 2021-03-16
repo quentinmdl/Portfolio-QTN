@@ -33,30 +33,3 @@ p.textfooter {
 	margin: 0;
 	padding: 0;
 }
-
-
-/* ARROX SCROLL-TOP BTN */
-
-.scroll-top {
-	position: fixed;
-	display: block;
-	bottom: 1.1em;
-	right: 1.2em;
-	z-index: 1000;
-}
-
-.scroll-top a {
-	background-color: rgba(0, 0, 0, 0.3);
-	display: block;
-	width: 28px;
-	height: 28px;
-	text-align: center;
-	color: #fff;
-	font-size: 14px;
-	line-height: 30px;
-	cursor: pointer;
-	transition: all 0.125s ease-in-out 0s;
-}
-
-
-

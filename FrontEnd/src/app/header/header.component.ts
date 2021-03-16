@@ -25,6 +25,20 @@ export class HeaderComponent implements OnInit {
       });
     })(jQuery);
 
+
+    /* ADD BLOCK/NONE CSS STYLE FUNCTION */
+
+    (function ($) {
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();    
+        if (scroll > 500) {
+            $(".scroll-top").css("display", "block");
+        } else {
+          $(".scroll-top").css("display", "none");
+        }
+      })
+    })(jQuery);
+
     
     /* ADD ACTIVE CLASS FUNCTION */
 
