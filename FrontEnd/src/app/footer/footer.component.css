@@ -1,0 +1,62 @@
+/* FOOTER CONTAINER */ 
+
+footer div.row {
+    padding: 40px 0;
+	background-color: rgb(51, 51, 51); 
+}
+
+/* FOOTER CONTENT */
+
+div.socialfooter {
+	padding: 10px;
+}
+div.socialfooter a {
+	text-decoration: none;
+	color:#fff;
+	padding: 10px;
+}
+div.socialfooter i {
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+div.socialfooter i:hover {
+	opacity: 0.5;	
+}
+
+p.textfooter {
+	color:#fff;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ARROX SCROLL-TOP BTN */
+
+.scroll-top {
+	position: fixed;
+	display: block;
+	bottom: 1.1em;
+	right: 1.2em;
+	z-index: 1000;
+}
+
+.scroll-top a {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	cursor: pointer;
+	transition: all 0.125s ease-in-out 0s;
+}
+
+
+

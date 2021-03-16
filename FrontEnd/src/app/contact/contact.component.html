@@ -1,0 +1,48 @@
+<section class="container-fluid" id="contact">
+    <div class="row">
+        <div class="container">
+            <div class="col-12 contact-header">
+                <h2 class="contact-title">Envie d'échanger ? N'hésitez pas
+                    <span>Contact</span>
+                </h2>
+                <div class="contact-line"></div>
+            </div>
+            <div class="col-9 mx-auto">
+                <form id="contactform">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="formtext" for="form_name">Nom/Prénom *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" [formControlName]="'name'" required="required" data-error="Prénom requis.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+            
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="formtext" for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" [formControlName]="'email'" required="required" data-error="Entré un Email Valide">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="formtext" for="form_subject">Sujet/Objet</label>
+                            <input id="form_subject" type="text" name="subject" class="form-control" [formControlName]="'object'" required="required" data-error="Entré un Objet">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="formtext" for="form_message">Votre Message *</label>
+                            <textarea id="form_message" name="message" class="form-control"  [formControlName]="'message'" rows="4" required="required" data-error="Entré un message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12  text-center">
+                        <input type="submit" name="submit"  id="form-submit" class="btn btn-success btn-send" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>	
+    </div>
+</section>

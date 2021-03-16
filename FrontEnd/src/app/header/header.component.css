@@ -1,0 +1,276 @@
+/* HOME */ 
+
+.header{
+	background-image: url("https://miro.medium.com/max/4800/1*uGA9ItThlcdQ5psdEWX9MA.jpeg");
+	min-height:100vh;
+	overflow:hidden; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+}
+.intro{
+	color: #fff;
+	position: absolute;
+	top: 47%; 
+	left: 27%; /* à 50%/50% du parent référent */
+  	transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+
+}
+p.hello {
+	font: 20px 'Poppins', sans-serif;   
+}
+h1.iam {
+  color: #fff;
+  font: 40px 'Poppins', sans-serif;  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  margin-left: -1.5px;
+  float: left;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* HOME ANIMATION & RESPONSIVE */
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+/* typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  10% { border-color: rgb(255, 255, 255); }
+}
+
+@media (max-width: 1168px) {
+	div.intro {
+		top: 40%; 
+		left: 30%; /* à 50%/50% du parent référent */
+	}
+	p.hello {
+		font: 14px 'Poppins', sans-serif;   
+	}
+	h1.iam {
+		font: 25px 'Poppins', sans-serif;   
+	}
+}
+
+/* scroll animation */
+
+.scroll{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+@media (max-width: 768px) {
+	.scroll{
+		top: 82%;
+	}
+	div.intro {
+		top: 40%; 
+		left: 50%; /* à 50%/50% du parent référent */
+	}
+	p.hello {
+		font: 12px 'Poppins', sans-serif;   
+	}
+	h1.iam {
+		font: 20px 'Poppins', sans-serif;   
+	}
+}
+
+.down {
+	position: relative;
+	width: 40px;
+	height: 60px;
+	border-radius: 18px;
+	border: 4px solid #fff;
+	background: transparent;
+	overflow: hidden;
+}
+.down:before {
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #fff;
+	left: 50%;
+	top: 10px;
+	transform: translate(-50%,0);
+	animation: scrolling 2s linear infinite;
+}
+
+
+@keyframes scrolling{
+	0%
+	{
+		opacity: 0;
+		transform: translate(-50%,px);
+	}
+	80%
+	{
+		opacity: 1;
+		transform: translate(-50%,15px);
+	}
+	100%
+	{
+		opacity: 0;
+		transform: translate(-50%,70px);
+	}
+}
+
+
+
+/* 	NAVBAR */
+
+.container-navbar {
+	height: 150px;
+}
+  
+.nav {
+	height: 67px;
+	position: relative;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	
+  }
+  
+.nav-header {
+	padding-right: 110px;
+}
+  
+.nav-title  a{
+	text-decoration: none;
+	display: block;
+	font-size: 22px;
+	color: rgb(41, 41, 41);
+	letter-spacing: 3px;
+	font: 400 22px/1.8 'Poppins', sans-serif;
+	padding: 15px 10px;
+  }
+  
+.nav-btn {
+	display: none;
+  }
+  
+.nav-links {
+	font-size: 18px;
+	z-index: 999;
+  }
+  
+.nav > .nav-links > a {
+	display: inline-block;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 3px;
+	font: 400 15px/1.8 'Poppins', sans-serif;
+  }
+  
+.nav > .nav-links > a:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+  }
+  
+.nav > #nav-check {
+	display: none;
+  }
+
+  
+/* Active a element ->  JS */
+
+.active {
+	background-color: black;
+	color: white !important ;
+}
+
+/* Navbar Fixed Scroll */ 
+
+.fixed {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+
+ /* RESPONSIVE NAVBAR */
+
+@media (min-width:1500px) {
+	.nav > .nav-header {
+		padding-right: 200px;
+	}
+}
+
+@media (max-width:1400px) {
+	.nav > .nav-header {
+		padding-right: 0px;
+	}
+}
+
+@media (max-width:1200px) {
+	.nav > .nav-btn {
+	  display: inline-block;
+	  position: absolute;
+	  right: 10px;
+	  top: 0px;
+
+	}
+	.nav > .nav-btn > label {
+	  display: inline-block;
+	  width: 50px;
+	  height: 50px;
+	  padding: 20px;
+	}
+	.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+	  cursor: pointer;
+	}
+	.nav > .nav-btn > label > span {
+	  display: block;
+	  width: 25px;
+	  height: 10px;
+	  border-top: 3px solid black;
+	}
+	.nav > .nav-links {
+	  position: absolute;
+	  display: block;
+	  width: 100%;
+	  height: 50%;
+	  background-color: transparent;
+	  height: 0px;
+	  transition: all 0.3s ease-in;
+	  overflow-y: hidden;
+	  top: 67px;
+	  left: 0px;
+	}
+	.nav > .nav-links > a {
+	  display: block;
+	  width: 100%;
+	  background-color:white;
+	  border: 0;
+	}
+	.nav > #nav-check:not(:checked) ~ .nav-links {
+	  height: 0px;
+	}
+	.nav > #nav-check:checked ~ .nav-links {
+	  height: calc(100vh - 50px);
+	  overflow-y: auto;
+	}
+	.active {
+		background-color: black !important;
+		color: white !important ;
+	}
+}  
