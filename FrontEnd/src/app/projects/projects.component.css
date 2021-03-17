@@ -284,6 +284,11 @@ a.close:hover {
 	padding: 10px 30px;
 	border-radius: 25px;
 }
+.popup-footer a:hover{
+	background-color:black;
+	color:white;
+	
+}
 
 /* RESPONSIVE  MODAL */
 
