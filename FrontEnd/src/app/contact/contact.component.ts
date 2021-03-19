@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
 
     public sendEmail() {
       var tempParams = {
-        from_name: $("#form_name").val(),
+        name: $("#form_name").val(),
         email: $("#form_email").val(),
         subject: $("#form_subject").val(),
         message: $("#form_message").val(),
