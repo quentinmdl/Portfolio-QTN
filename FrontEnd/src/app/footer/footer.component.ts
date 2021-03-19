@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ready } from 'jquery';
 
 @Component({
   selector: 'app-footer',

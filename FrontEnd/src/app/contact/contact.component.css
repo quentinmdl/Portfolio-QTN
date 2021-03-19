@@ -63,11 +63,13 @@ form#contactform {
 	margin-top: 10px;
 	margin-left: 0px;
 	margin-right: 0px;
+	text-align: center;
 }
 
 label.formtext{
 	color:#5b5963;
     font: 16px 'Poppins', sans-serif;
+	float: left;
 }
 input#form_name,#form_email,#form_subject,#form_message {
 	background-color: transparent;
@@ -86,4 +88,8 @@ input.btn:hover {
 	background-color: #fff;
 	border: 1px solid #5b5963;
 	color: black;
+}
+#send-message {
+	text-align: center;
+	display: none;
 }

@@ -1,6 +1,7 @@
 import { transition } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
