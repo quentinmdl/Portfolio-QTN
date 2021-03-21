@@ -13,18 +13,6 @@ import * as $ from 'jquery';
 
 export class ContactComponent implements OnInit {
   
-  // public sendEmail(e: Event) {
-  //   e.preventDefault();
-  //   emailjs.sendForm('service_vuc0tzy', 'template_upy9tho', e.target as HTMLFormElement, 'user_NUduIc14kwLKSkO6SKmB5')
-  //     .then((result: EmailJSResponseStatus) => {
-  //       // $("#send-message").css('display','block')
-  //       alert("Email envoyé avec succès !")
-  //       $("#send-message").css('display','none');
-  //     }, (error) => {
-  //       alert("Erreur dans l'envoi de l'email")
-  //     });
-  // }
-
     public sendEmail() {
       var tempParams = {
         name: $("#form_name").val(),
