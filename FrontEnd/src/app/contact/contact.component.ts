@@ -1,4 +1,3 @@
-import { formatCurrency } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 import emailjs, { EmailJSResponseStatus, init } from 'emailjs-com';
