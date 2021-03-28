@@ -22,11 +22,8 @@ export class ContactComponent implements OnInit {
       };
       $("#send-message").css('display','block');
       emailjs.send('service_vuc0tzy', 'template_upy9tho', tempParams)
-      .then(function(res) {
-        alert("Email envoyé avec succès !");
-        $("#send-message").css('display','none');
-        window.location.reload()
-      })
+      alert("Email envoyé avec succès !");
+       window.location.reload()
     }
 
   constructor( ) { }
